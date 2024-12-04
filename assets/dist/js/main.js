@@ -16,7 +16,7 @@ navLinks.addEventListener("click", (e) => {
 
 const scrollRevealOption = {
   origin: "bottom",
-  distance: "50px",
+  distance: "100px",
   duration: 1000,
 };
 
