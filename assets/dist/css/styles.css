@@ -716,6 +716,7 @@ footer {
     position: relative;
     isolation: isolate;
     height: 100%;
+    width: 100%;
   }
 
   .header__image img {
