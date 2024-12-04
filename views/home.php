@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="header__image">
-          <img src="assets/header.png" alt="header" />
+          <img src="../images/highway.jpg" alt="header" />
         </div>
       </div>
     </header>
