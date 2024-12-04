@@ -1,3 +1,3 @@
 <script>
-    window.location.include '';
+    window.location.include
 </script>
