@@ -705,6 +705,7 @@ footer {
 
   .header__content :is(p, h1) {
     text-align: left;
+    display: flex;
   }
 
   .header__btns {
