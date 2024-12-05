@@ -33,24 +33,24 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="login.php">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../assets/dist/jsvendor/jquery/jquery.min.js"></script>
-    <script src="../assets/dist/jsvendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/dist/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../assets/dist/jsvendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../assets/dist/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="../assets/dist/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="../assets/dist/jsvendor/chart.js/Chart.min.js"></script>
+    <script src="../assets/dist/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="../assets/dist/js/demo/chart-area-demo.js"></script>
