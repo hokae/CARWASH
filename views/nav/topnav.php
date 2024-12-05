@@ -174,8 +174,7 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="home.php" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Log out </a>
+                            <a class="nav-link" href="../views/home.php" >Log out </a>
                            
                         </li>
 
