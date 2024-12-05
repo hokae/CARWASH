@@ -85,7 +85,7 @@
 			
 			//check if login success
 			if ($login){
-				if($login['user_type'] == 'admin'){
+				if($login['user_type'] == 'admin'.'user'){
 
 					header('location:../page/admin.php');
 				}
@@ -94,24 +94,7 @@
 				include '../views/login.php';
 			}
 		}
-        function authenticaLogin(){
-			//stanciation
-			$authentication = new authenticationModel();
-			
-			//authenticat login
-			$login = $authentication->authenticaLogin($_POST);
-			
-			//check if login success
-			if ($login){
-				if($login['user_type'] == 'user'){
-
-					header('location:../page/home.php');
-				}
-			}else{
-				$msg = "Invalid Username or Password!";
-				include '../views/login.php';
-			}
-		}
+       
 		function register(){//register user
 		
 			
