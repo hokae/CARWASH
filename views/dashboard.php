@@ -185,9 +185,9 @@
 
                         <!-- Content Column -->
 
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-xl-10 col-lg-6 mb-4">
 
-                        <div class="col-lg-6 mb-4 ">
+                        <div class="col-xl-10 col-lg-6 mb-4 ">
 
 
                             <!-- Project Card Example -->
