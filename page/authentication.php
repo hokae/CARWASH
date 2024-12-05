@@ -112,22 +112,33 @@
 				include '../views/login.php';
 			}
 		}
-        function register(){
-			//stanciation
-			$authentication = new authenticationModel();
+		function register(){//register user
+		
 			
-			//authenticat login
-			$register = $authentication->register($_POST);
+			$authentication_register = new AuthenticationModel();
 			
-			//check if login success
-			if ($register){
-				if($register['user_type'] == 'user'){
-					header('location:../page/home.php');
-				}
+			//check for correct password
+			if ($_POST['password'] == $_POST['confirm_password']){
+				//if correct password, process register
+				//prepare temp array
+				$temp_array = [];
+				$temp_array['name'] = $_POST['name'];
+				$temp_array['email'] = $_POST['email'];
+				$temp_array['password'] = $_POST['password'];
+				
+				//process registration
+				$register = $authentication_register->register($_POST);
+				
+				echo "<script>alert('Successfully registered.');</script>";
+				include "../views/login.php";
+				
 			}else{
-				$msg = "Invalid Username or Password!";
-				include '../views/register.php';
+				//error message
+				$msg = 'Invalid Password!';
+				//back
+				include "../views/register.php";
 			}
+			
 		}
 	}
 ?>
