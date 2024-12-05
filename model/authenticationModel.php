@@ -23,25 +23,16 @@
 			return $query->fetch(PDO::FETCH_ASSOC);
 		}
 
-		function register(){
-			try{
-				$sql = "INSERT INTO `user_tb` (`user_name`, `user_email`, `user_password`) VALUE ('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')";
+		function register($data){//register
+		    $query = "INSERT INTO `user_tb`(`user_name`, `user_email`, `user_password`) 
+									VALUES (:name, :email, :password)";
+			$stmt = $this->conn->prepare($query);
+			$stmt->bindParam(':name', $data['name']);
+			$stmt->bindParam(':email', $data['email']);
+			$stmt->bindParam(':password', $data['password']);
+			$stmt->execute();
 
-				$query = $this->conn->prepare($sql);
-	
-	
-				$query->execute();
-	
-				return true;
-			} catch(Throwable $e){
-				$e->getMessage();
-
-				return false;
-
-			}
 			
-
-
 		}
 	}
 ?>
