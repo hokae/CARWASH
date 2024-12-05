@@ -25,7 +25,7 @@
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Price</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!" style="background-color: red;">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/contact.php" style="background-color: red;">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
