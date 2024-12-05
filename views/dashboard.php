@@ -236,3 +236,6 @@
             </div>
             <!-- End of Main Content -->
 
+ <?php
+    include 'nav/server_footer.php';
+ ?>
