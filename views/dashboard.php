@@ -184,7 +184,7 @@
                     <div class="row">
 
                         <!-- Content Column -->
-                        <div class="col-lg-6 mb-4 p-10">
+                        <div class="col-lg-6 mb-4">
 
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
