@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form action="../page/authentication.php?sub_page=register" method="$_POST" class="user">
+                            <form action="../page/authentication.php?function=register&&sub_page=register" method="$_POST" class="user">
                             <div class="form-group">
                                     <input type="name" class="form-control form-control-user" id=""
                                         placeholder="First Name" required>
