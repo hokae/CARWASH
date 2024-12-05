@@ -1,5 +1,6 @@
 <?php
 	include 'nav/header.php';
+	set_include_path('last_db');
 ?>
 		<main>
 			<div class="container py-4">
