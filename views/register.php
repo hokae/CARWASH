@@ -36,16 +36,10 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form action="../page/authentication.php?function=register&&sub_page=register" method="$_POST" class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="First Name" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name" required>
-                                    </div>
+                            <form action="../page/authentication.php?sub_page=register" method="$_POST" class="user">
+                            <div class="form-group">
+                                    <input type="name" class="form-control form-control-user" id=""
+                                        placeholder="First Name" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail"
@@ -54,11 +48,11 @@
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password" required>
+                                            id="" placeholder="Password" required>
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password" required>
+                                            id="" placeholder="Confirm Password" required>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-user btn-block">

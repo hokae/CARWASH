@@ -25,7 +25,7 @@
 
 		function register(){
 			try{
-				$sql = "INSERT INTO `user_tb` (`user_name`, `user_email`, `user_password`) VALUE ('{$_POST['username']}', '{$_POST['email']}', '{$_POST['password']}')";
+				$sql = "INSERT INTO `user_tb` (`user_name`, `user_email`, `user_password`) VALUE ('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')";
 
 				$query = $this->conn->prepare($sql);
 	
