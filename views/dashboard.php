@@ -1,6 +1,6 @@
 <?php
-    include 'topnav.php';
-    include 'server_sidebar.php';
+    include 'nav/topnav.php';
+    include 'nav/server_sidebar.php';
 ?>
 
 
@@ -340,5 +340,5 @@
             <!-- End of Main Content -->
 
 <?php
-    include 'server_footer.php';
+    include 'nav/server_footer.php';
 ?>
