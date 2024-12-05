@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user">
+                            <form action="../page/authentication.php?function=register&&sub_page=register" method="$_POST" class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="exampleFirstName"
@@ -61,9 +61,9 @@
                                             id="exampleRepeatPassword" placeholder="Repeat Password" required>
                                     </div>
                                 </div>
-                                <a href="../page/authentication.php?sub_page=login" class="btn btn-primary btn-user btn-block">
+                                <button class="btn btn-primary btn-user btn-block">
                                     Register Account
-                                </a>
+                                </button>
                                 <hr>
                                 <a href="#" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> Register with Google
@@ -74,7 +74,7 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" href="../page/authentication.php?sub_page=login">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>

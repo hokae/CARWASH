@@ -126,7 +126,7 @@
 				}
 			}else{
 				$msg = "Invalid Username or Password!";
-				include '../views/login.php';
+				include '../views/register.php';
 			}
 		}
 	}
