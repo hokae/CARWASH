@@ -8,8 +8,6 @@
 	//-----------------------//
 	//--     --//
 	//-----------------------//
-	
-	if(isset($_POST)){
 		try {//used try to catch unfortunate errors
 			//check for active function
 			if (isset($_GET['function'])){
@@ -23,9 +21,7 @@
 			echo '<h1>ERROR 404</h1>';
 			echo $e->getMessage();
 		}//end of validation
-	}else{
-		header("Location: ../page/home.php");
-	}
+	
 	
 	
 	//-----------------------//
@@ -87,7 +83,7 @@
 			if ($login){
 				if($login['user_type'] == 'admin'.'user'){
 
-					header('location:../page/admin.php');
+					header('location:../page/dashboard.php');
 				}
 			}else{
 				$msg = "Invalid Username or Password!";

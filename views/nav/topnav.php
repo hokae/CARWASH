@@ -174,7 +174,7 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link" href="../views/home.php" >Log out </a>
+                            <a class="nav-link" href="../views/login.php" >Log out </a>
                            
                         </li>
 
