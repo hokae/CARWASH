@@ -20,7 +20,7 @@
 		
 			$query->execute();
 			//return
-			return $query->fetch(PDO::FETCH_ASSOC);
+			return $query->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 		function register($data){//register
@@ -32,7 +32,7 @@
 			$stmt->bindParam(':password', $data['password']);
 			$stmt->execute();
 
-			return true;
+			
 		}
 	}
 ?>
