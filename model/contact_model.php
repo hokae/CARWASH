@@ -1,6 +1,6 @@
 <?php
 	//import database connector
-	require_once 'connector.php';
+	require_once 'server.php';
 	
 	//-------------------------------//
 	//--class for login page active--//

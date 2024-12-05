@@ -10,7 +10,7 @@
 	//-----------------------//
 	try {//used try to catch unfortunate errors
 		//check for active function
-		
+		$contact = new ContactModel();
 		//no active function, use the default page to view
 		new Contact($page_info);
 		

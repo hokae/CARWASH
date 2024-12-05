@@ -7,7 +7,7 @@
 					<div class="container-fluid py-5">
 						<h1 class="display-5 fw-bold"><?= $info['cont_wlcm_heading'] ?></h1>
 						<p class="col-md-8 fs-4">
-							<?= $info['cont_wlcm_msg'] ?>
+							<?= $info['cont_wlcm_smg'] ?>
 						</p>
 					</div>
 				</div>
@@ -16,8 +16,8 @@
 					<div class="col-md-6">
 						<div class="h-100 p-5 text-white bg-dark rounded-3">
 							<h2><?= $info['cont_sec_heading'] ?></h2>
+							<p><?= $info['cont_number'] ?></p>
 							<p><?= $info['cont_address'] ?></p>
-							<p><?= $info['cont_num'] ?></p>
 							<p><?= $info['cont_email'] ?></p>
 						</div>
 					</div>
