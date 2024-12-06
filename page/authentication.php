@@ -93,9 +93,9 @@
 			
 			if($result){
 				if($result['user_type'] === 'user'.'admin'){
-					header('Location: ../page/admin.php?sub_page=admin');
+					header('Location: ../page/home.php?sub_page=home');
 				}else{
-					header('Location: ../views/home.php?sub_pagte=admin');
+					header('Location: ../views/home.php?sub_page=home');
 				}
 			}else{
 				$msg = "Invalid Username or Password!";
