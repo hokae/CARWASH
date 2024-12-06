@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-image">
 
     <div class="container">
 
@@ -36,7 +36,16 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="position: relative; overflow: hidden;">
+                                <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="../images/car.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <!-- Your background here -->
+                                <div class="content" style="position: relative; padding-top: 70px;">
+                                    <img src="../images/was.png" alt="">
+                                </div>
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
