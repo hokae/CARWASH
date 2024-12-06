@@ -15,21 +15,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li class="nav-item" <?php if($_GET['page']="home") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "home.php"? 'active bg-gradient-secondary':'' ; ?> " href="home.php" ><b>Home</b></a>
-            </li>
-            <li class="nav-item" <?php if($_GET['page']="about") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "about.php"? 'active bg-gradient-secondary':'' ; ?> " href="about.php" ><b>About</b></a>
-            </li>
-            <li class="nav-item" <?php if($_GET['page']="services") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "services.php"? 'active bg-gradient-secondary':'' ; ?> " href="services.php" ><b>Services</b></a>
-            </li>
-            <li class="nav-item" <?php if($_GET['page']="price") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "price.php"? 'active bg-gradient-secondary':'' ; ?> " href="price.php" ><b>Price</b></a>
-            </li>
-            <li class="nav-item" <?php if($_GET['page']="contact") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "contact.php"? 'active bg-gradient-secondary':'' ; ?> " href="contact.php" ><b>Contact Us</b></a>
-            </li>
+          <li><a href="home.php" class="active">Home<br></a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
