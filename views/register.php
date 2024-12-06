@@ -36,23 +36,23 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form action="../page/authentication.php?function=register&&sub_page=register" method="$_POST" class="user">
+                            <form action="../page/authentication.php?function=register&&sub_page=register" method="POST" class="user">
                             <div class="form-group">
-                                    <input type="name" class="form-control form-control-user" id=""
-                                        placeholder="First Name" required>
+                                    <input type="name" class="form-control form-control-user" id="user_name"
+                                        placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="email"
                                         placeholder="Email Address" required>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="" placeholder="Password" required>
+                                            id="password" placeholder="Password" required>
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                            id="" placeholder="Confirm Password" required>
+                                            id="confirm_password" placeholder="Confirm Password" required>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-user btn-block">
