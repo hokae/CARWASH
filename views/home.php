@@ -49,7 +49,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="../images/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="../images/wash.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -59,12 +59,11 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
         </div>
       </div>
+
     </section><!-- /Hero Section -->
 
     <!-- Why Us Section -->
