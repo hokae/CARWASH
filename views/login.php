@@ -49,7 +49,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Log in</h1>
                                     </div>
-                                    <form action="../views/home.php" method="$_POST" class="user">
+                                    <form action="../page/authentication.php?function=loggedin&&sub_page=loggedin" method="$_POST" class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"

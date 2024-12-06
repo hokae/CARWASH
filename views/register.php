@@ -38,12 +38,12 @@
                             </div>
                             <form action="../page/authentication.php?function=register&&sub_page=register" method="POST" class="user">
                             <div class="form-group">
-                                    <input type="name" class="form-control form-control-user" id="user_name"
-                                        placeholder="Name" required>
+                                    <input type="text" class="form-control form-control-user" id="name"
+                                        placeholder="Full Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="email"
-                                        placeholder="Email Address" required>
+                                    <input type="text" class="form-control form-control-user" id="email"
+                                        placeholder="Email " required>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">

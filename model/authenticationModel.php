@@ -1,6 +1,6 @@
 <?php
 	//import database connector
-	require_once 'connector.php';
+	require_once 'server.php';
 	
 	//-------------------------------//
 	//--class for login page active--//
@@ -27,7 +27,8 @@
 
 		function register(){
 
-			$sql = "INSERT INTO `user_tb` (`user_name`, `user_email`, `user_password`) VALUE ('{$_POST['name']}','{$_POST['email']}','{$_POST['password']}')";
+			$sql = "INSERT INTO `user_tb` (`user_fullname`, `user_email`, `user_password`) 
+								VALUE ('{$_POST['name']}','{$_POST['email']}','{$_POST['password']}')";
 			$query = $this->conn->prepare($sql);
 			
 

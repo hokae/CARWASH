@@ -92,7 +92,7 @@
 			$result = $loggedin->loggedin($_POST);
 			
 			if($result){
-				if($result['user_type'] === 'admin'){
+				if($result['user_type'] === 'user'.'admin'){
 					header('Location: ../page/admin.php?sub_page=admin');
 				}else{
 					header('Location: ../views/home.php?sub_pagte=admin');
@@ -108,19 +108,19 @@
 		function register(){//register user
 		
 			$register = new authenticationModel();
-			
 
 			$result = $register->register($_POST);
 			
 			if($result){
 				echo "<script>alert('REGISTERED SUCCESSFULLY')</script>";
-				include '../views/register.php';
+				include '../views/login.php';
 			}else{
 				echo "<script>alert('REGISTRATION FAILED')</script>";
 				include '../views/register.php';
 			}
-
+		
 			
 		}
+	
 	}
 ?>
