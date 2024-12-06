@@ -20,19 +20,17 @@
 		
 			$query->execute();
 			//return
-			return $query->fetch(PDO::FETCH_ASSOC);
+			return $query->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		function register($data){//register
-		    $query = "INSERT INTO `user_tb`(`user_name`, `user_email`, `user_password`) 
-									VALUES (:name, :email, :password)";
+		function register($post){//register
+		    $query = "INSERT INTO `user_tb`(`user_fullname`, `user_email`, `user_password`) 
+									VALUES (:fullname, :email, :password)";
 			$stmt = $this->conn->prepare($query);
-			$stmt->bindParam(':name', $data['name']);
-			$stmt->bindParam(':email', $data['email']);
-			$stmt->bindParam(':password', $data['password']);
+			$stmt->bindParam(':name', $post['name']);
+			$stmt->bindParam(':email', $post['email']);
+			$stmt->bindParam(':password', $post['password']);
 			$stmt->execute();
-
-			
 		}
 	}
 ?>

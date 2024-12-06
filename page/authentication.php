@@ -97,13 +97,12 @@
 			$authentication_register = new AuthenticationModel();
 			
 			//check for correct password
-			if ($_POST['password'] == $_POST['confirm_password']){
-				//if correct password, process register
-				//prepare temp array
-				$temp_array = [];
-				$temp_array['name'] = $_POST['name'];
-				$temp_array['email'] = $_POST['email'];
-				$temp_array['password'] = $_POST['password'];
+			if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+				// Check if the form fields are set before accessing them
+				$fullname = isset($_POST['fullname']) ? $_POST['fullname'] : '';
+				$email = isset($_POST['email']) ? $_POST['email'] : '';
+				$password = isset($_POST['password']) ? $_POST['password'] : '';
+				$confirm_password = isset($_POST['confirm_password']) ? $_POST['confirm_password'] : '';
 				
 				//process registration
 				$register = $authentication_register->register($_POST);
