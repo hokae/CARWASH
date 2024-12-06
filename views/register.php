@@ -46,7 +46,7 @@
                 </div>
                 <button type="submit" class="low">Register</button>
                 <div class="register-link">
-                    <p>Already have an account? <a href="authentication.php?sub_page=login">Log In</a></p>
+                    <p> <a href="authentication.php?sub_page=login">Already have an account?</a></p>
                 </div>
             </form>
         </div>
