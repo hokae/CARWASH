@@ -8,9 +8,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
     <a class="logo d-flex align-items-center">
-        <img src="../images/logo.png" alt="Nova Logo" style="width: 150px; height: auto;" class="sitename">
+        <h1 class="sitename" style="background-color: red; border-radius: 10px;"></h1>
     </a>
-
 
 
       <nav id="navmenu" class="navmenu">
