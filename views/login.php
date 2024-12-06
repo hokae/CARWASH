@@ -49,15 +49,15 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Log in</h1>
                                     </div>
-                                    <form action="../page/authentication.php?function=login&&sub_page=loggedin" method="$_POST" class="user">
+                                    <form action="../page/authentication.php?function=login&&sub_page=loggedin" method="POST" class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Email Address" required>
+                                            <input type="email" name="email" class="form-control form-control-user"
+                                                id="email" aria-label="email"
+                                                placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" required>
+                                            <input type="password" name="password" class="form-control form-control-user"
+                                                id="password" aria-label="password" placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">

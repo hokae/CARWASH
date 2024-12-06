@@ -92,14 +92,14 @@
 			$result = $loggedin->loggedin($_POST);
 			
 			if($result){
-				if($result['user_type'] === 'user'.'admin'){
+				if($result['user_type'] === 'user'){
 					header('Location: ../page/home.php?sub_page=home');
 				}else{
 					header('Location: ../views/home.php?sub_page=home');
 				}
 			}else{
 				$msg = "Invalid Username or Password!";
-				include '../views/register.php';
+				include '../views/home.php';
 			}
 
 			
