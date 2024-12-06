@@ -24,59 +24,33 @@
 
 <body class="bg-gradient-primary">
 
-    <div class="container">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                    <div class="col-lg-7">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
-                            </div>
-                            <form action="../page/authentication.php?function=register&&sub_page=register" method="POST" class="user">
-                            <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="name"
-                                        placeholder="Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="email"
-                                        placeholder="Email " required>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="password" placeholder="Password" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="confirm_password" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </button>
-                                <hr>
-                                <a href="#" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="#" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
-                            </form>
-                            <hr>
-                            <div class="text-center">
-                                <a class="small" href="../page/authentication.php?sub_page=login">Already have an account? Login!</a>
-                            </div>
-                        </div>
-                    </div>
+<section id="forms" class="forms section-padding">
+        <div class="wrapper">
+            <form action="../page/authentication.php?function=register&&sub_page=register" method="POST">
+                <h1>REGISTER</h1>
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder="Full name" required aria-label="Full name">
                 </div>
-            </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required aria-label="Password">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required aria-label="Confirm Password">
+                </div>
+                <button type="submit" class="low">Register</button>
+                <div class="register-link">
+                    <p>Already have an account? <a href="authentication.php?sub_page=login">Log In</a></p>
+                </div>
+            </form>
         </div>
-
-    </div>
+    </section>
 
     <!-- Bootstrap core JavaScript-->
     <script src="../assets/dist/vendor/jquery/jquery.min.js"></script>
