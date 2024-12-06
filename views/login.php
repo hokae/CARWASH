@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="bg-image" style="background-image: url('../images/wall.jpg'); background-size: cover; background-position: center; height: 100vh;">
+<body class="bg-image" style="background-image: url('../images/lg2.jpg'); background-size: cover; background-position: center; height: 100vh;">
     <div class="container">
         <!-- Outer Row -->
         <div class="row justify-content-center ">
@@ -44,7 +44,7 @@
                                     <img src="../images/was.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6 bg-gradient-secondary">
+                            <div class="col-lg-6 bg-secondary bg-gradient">
                                 <div class="p-5">
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Log in</h1>

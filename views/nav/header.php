@@ -27,6 +27,12 @@
                 <a class="nav-link <?= $page == "price.php"? 'active bg-gradient-primary':'' ; ?> " href="price.php" ><b>Price</b></a>
             </li>
             <li><a href="contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: black; text-decoration: none; font-weight:bold;">Contact Us</a></li>
+            <!-- Log Out Button with Icon -->
+            <li>
+                <a href="../views/login.php" style="padding: 5px 10px; color: white; text-decoration: none;">
+                    <i class="bi bi-box-arrow-right" style="font-size: 24px;"></i>
+                </a>
+            </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
