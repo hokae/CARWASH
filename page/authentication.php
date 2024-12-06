@@ -8,6 +8,8 @@
 	//-----------------------//
 	//--     --//
 	//-----------------------//
+	session_start();
+	if(!isset($_SESSION['loggedin'])){
 		try {//used try to catch unfortunate errors
 			//check for active function
 			if (isset($_GET['function'])){
@@ -21,7 +23,9 @@
 			echo '<h1>ERROR 404</h1>';
 			echo $e->getMessage();
 		}//end of validation
-	
+	}else{
+		header("Location: ../page/home.php");
+	}
 	
 	
 	//-----------------------//
@@ -47,8 +51,11 @@
 		function login(){
 			include '../views/login.php';
 		}
-        function register(){
-			include '../views/register.php';
+		function register(){ //register page
+			include "../views/register.php";
+		}
+		function home(){ //home page
+			include "../views/home.php";
 		}
 	}
 	
@@ -71,51 +78,48 @@
 		}
 		
 		//-----------------------------//
-		//--   function start here   --// */
-		function authenticaLoginlogin(){
-			//stanciation
-			$authentication = new authenticationModel();
+		//--   function start here   --//
+		
+		//-----------------------------------//
+		//--  active function start here   --//
+		
+		function loggedin(){ //validate login
+			//instantiate class model
 			
-			//authenticat login
-			$login = $authentication->authenticaLogin($_POST);
+			$loggedin = new authenticationModel();
 			
-			//check if login success
-			if ($login){
-				if($login['user_type'] == 'admin'.'user'){
 
-					header('location:../page/dashboard.php');
+			$result = $loggedin->loggedin($_POST);
+			
+			if($result){
+				if($result['user_type'] === 'admin'){
+					header('Location: ../page/admin.php?sub_page=admin');
+				}else{
+					header('Location: ../views/home.php?sub_pagte=admin');
 				}
 			}else{
 				$msg = "Invalid Username or Password!";
-				include '../views/login.php';
+				include '../views/register.php';
 			}
+
+			
 		}
-       
+		
 		function register(){//register user
 		
+			$register = new authenticationModel();
 			
-			$authentication_register = new AuthenticationModel();
+
+			$result = $register->register($_POST);
 			
-			//check for correct password
-			if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-				// Check if the form fields are set before accessing them
-				$fullname = isset($_POST['fullname']) ? $_POST['fullname'] : '';
-				$email = isset($_POST['email']) ? $_POST['email'] : '';
-				$password = isset($_POST['password']) ? $_POST['password'] : '';
-				$confirm_password = isset($_POST['confirm_password']) ? $_POST['confirm_password'] : '';
-				
-				//process registration
-				$register = $authentication_register->register($_POST);
-				
-				echo "<script>alert('Successfully registered.');</script>";
-				include "../views/login.php";
-				
+			if($result){
+				echo "<script>alert('REGISTERED SUCCESSFULLY')</script>";
+				include '../views/register.php';
 			}else{
-				//error message
-				$msg = 'Invalid Password!';
-				//back
-				include "../views/register.php";
+				echo "<script>alert('REGISTRATION FAILED')</script>";
+				include '../views/register.php';
 			}
+
 			
 		}
 	}
