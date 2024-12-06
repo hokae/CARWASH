@@ -12,10 +12,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.php" class="active">Home<br></a></li>
+          <li><a href="home.php" class="active ">Home<br></a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="services.php">Services</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="price.php">Price</a></li>
+          <li><a href="contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: white; text-decoration: none;">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
