@@ -24,9 +24,7 @@
             <li class="nav-item" <?php if($_GET['page']="services") { ?> class="active" <?php } ?>>
                 <a class="nav-link <?= $page == "services.php"? 'active bg-gradient-primary':'' ; ?> " href="services.php" ><b>Services</b></a>
             </li>
-            <li class="nav-item" <?php if($_GET['page']="contact") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "contact.php"? 'active bg-gradient-primary':'' ; ?> " href="contact.php" ><b>Contact Us</b></a>
-            </li>
+            <li><a href="contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: black; text-decoration: none; font-weight:bold;">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
