@@ -23,10 +23,8 @@
 
 </head>
 
-<body class="bg-gradient-image">
-
+<body class="bg-image" style="background-image: url('../images/Green.jpg'); background-size: cover; background-position: center; height: 100vh;">
     <div class="container">
-
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
