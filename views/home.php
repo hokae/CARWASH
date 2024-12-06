@@ -65,7 +65,6 @@
           </div>
         </div>
       </div>
-
     </section><!-- /Hero Section -->
 
     <!-- Why Us Section -->
