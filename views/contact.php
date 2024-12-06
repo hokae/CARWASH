@@ -1,38 +1,41 @@
 <?php
-	include 'nav/header.php';
-	set_include_path('last_db');
-?>
-		<main>
-			<div class="container py-4">
-				<div class="p-5 mb-4 bg-light rounded-3">
-					<div class="container-fluid py-5">
-						<h1 class="display-5 fw-bold"><?= $info['cont_wlcm_heading'] ?></h1>
-						<p class="col-md-8 fs-4">
-							<?= $info['cont_wlcm_smg'] ?>
-						</p>
-					</div>
-				</div>
-			
-				<div class="row align-items-md-stretch">
-					<div class="col-md-6">
-						<div class="h-100 p-5 text-white bg-dark rounded-3">
-							<h2><?= $info['cont_sec_heading'] ?></h2>
-							<p><?= $info['cont_number'] ?></p>
-							<p><?= $info['cont_address'] ?></p>
-							<p><?= $info['cont_email'] ?></p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="h-100 p-5 bg-light border rounded-3">
-							<h2></h2>
-							<p>Welcome to our beautiful destination! We're so excited to have you here and can't wait for you to explore everything our region has to offer. From stunning landscapes to rich cultural heritage, there's something for everyone to enjoy. Whether you're here for adventure, relaxation, or simply to make unforgettable memories, we're confident you'll have an incredible time.
-								Feel free to ask for recommendations, share your experiences, and most importantly, enjoy every moment of your visit!</p>
-							<button class="btn btn-outline-secondary" type="button">Example button</button>
-						</div>
-					</div>
-				</div>
-			</div>
+  /**
+  * Requires the "PHP Email Form" library
+  * The "PHP Email Form" library is available only in the pro version of the template
+  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
+  * For more info and help: https://bootstrapmade.com/php-email-form/
+  */
 
-<?php
-	include 'nav/footer.php';
+  // Replace contact@example.com with your real receiving email address
+  $receiving_email_address = 'contact@example.com';
+
+  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+    include( $php_email_form );
+  } else {
+    die( 'Unable to load the "PHP Email Form" Library!');
+  }
+
+  $contact = new PHP_Email_Form;
+  $contact->ajax = true;
+  
+  $contact->to = $receiving_email_address;
+  $contact->from_name = $_POST['name'];
+  $contact->from_email = $_POST['email'];
+  $contact->subject = $_POST['subject'];
+
+  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  /*
+  $contact->smtp = array(
+    'host' => 'example.com',
+    'username' => 'example',
+    'password' => 'pass',
+    'port' => '587'
+  );
+  */
+
+  $contact->add_message( $_POST['name'], 'From');
+  $contact->add_message( $_POST['email'], 'Email');
+  $contact->add_message( $_POST['message'], 'Message', 10);
+
+  echo $contact->send();
 ?>
