@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Nova Bootstrap Template</title>
+  <title>User page</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
