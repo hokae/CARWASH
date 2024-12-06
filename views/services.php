@@ -1,3 +1,6 @@
+<?php
+    include 'nav/header.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,27 +42,6 @@
 
 <body class="services-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="home.php">Home<br></a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="services.php" class="active">Services</a></li>
-          <li><a href="contact.php">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
 
   <main class="main">
 
@@ -420,26 +402,6 @@
       </div>
     </div>
 
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/dist/vendor2/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/dist/vendor2/php-email-form/validate.js"></script>
-  <script src="../assets/dist/vendor2/aos/aos.js"></script>
-  <script src="../assets/dist/vendor2/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/dist/vendor2/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/dist/vendor2/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/dist/vendor2/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../assets/dist/js/main2.js"></script>
-
-</body>
-
-</html>
+<?php
+    include 'nav/footer.php';
+?>
