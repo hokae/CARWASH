@@ -59,7 +59,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                <a class="nav-link collapsed" href="sales.php" aria-expanded="true">
                     <span>Sales</span>
                 </a>
             </li>
