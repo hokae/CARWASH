@@ -51,7 +51,7 @@
         <h1>About</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li class="current">About</li>
           </ol>
         </nav>
@@ -188,7 +188,7 @@
               </div>
               <div class="member-info">
                 <h4>Jasper James Calinawan</h4>
-                <span>Chief Executive Officer</span>
+                <span>Scammer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
