@@ -5,7 +5,7 @@
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'home'; //for function to be loaded
 		
 	//-----------------------//
-	//--  validate contact  --//
+	//--  home  --//
 	//-----------------------//
 	try {//used try to catch unfortunate errors
 		//check for active function

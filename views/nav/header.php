@@ -15,18 +15,18 @@
       <nav id="navmenu" class="navmenu">
         <ul>
             <li class="nav-item" <?php if($_GET['page']="home") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "home.php"? 'active bg-gradient-primary':'' ; ?> " href="home.php" ><b>Home</b></a>
+                <a class="nav-link <?= $page == "home.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/home.php" ><b>Home</b></a>
             </li>
             <li class="nav-item" <?php if($_GET['page']="about") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "about.php"? 'active bg-gradient-primary':'' ; ?> " href="about.php" ><b>About</b></a>
+                <a class="nav-link <?= $page == "about.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/about.php" ><b>About</b></a>
             </li>
             <li class="nav-item" <?php if($_GET['page']="services") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "services.php"? 'active bg-gradient-primary':'' ; ?> " href="services.php" ><b>Services</b></a>
+                <a class="nav-link <?= $page == "services.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/services.php" ><b>Services</b></a>
             </li>
             <li class="nav-item" <?php if($_GET['page']="price") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "price.php"? 'active bg-gradient-primary':'' ; ?> " href="price.php" ><b>Price</b></a>
+                <a class="nav-link <?= $page == "price.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/price.php" ><b>Price</b></a>
             </li>
-            <li><a href="contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: black; text-decoration: none; font-weight:bold;">Contact Us</a></li>
+            <li><a href="../page/contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: black; text-decoration: none; font-weight:bold;">Contact Us</a></li>
             <!-- Log Out Button with Icon -->
             <li>
                 <a href="../views/login.php" style="padding: 5px 10px; color: white; text-decoration: none;">
