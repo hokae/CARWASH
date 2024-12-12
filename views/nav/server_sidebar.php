@@ -106,7 +106,12 @@
                     <span>Reservation</span>
                 </a>
             </li>
-
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="services.php">
+                    <span>Services</span>
+                </a>
+            </li>
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.php">
