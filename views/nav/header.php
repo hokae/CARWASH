@@ -43,13 +43,14 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+      
     <a class="logo d-flex align-items-center">
-        <h1 class="sitename" style="background-color: red; border-radius: 10px;"></h1>
+        <h1></h1>
     </a>
 
 
       <nav id="navmenu" class="navmenu">
+        
         <ul>
             <li class="nav-item" <?php if($_GET['page']="home") { ?> class="active" <?php } ?>>
                 <a class="nav-link <?= $page == "home.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/home.php" ><b>Home</b></a>

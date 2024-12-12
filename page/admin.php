@@ -1,6 +1,6 @@
 <?php
 	//import model
-	include '../model/admin_model.php';
+	include '../model/adminModel.php';
 
 	$page_info['page'] = 'admin'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'admin'; //for function to be loaded
@@ -46,7 +46,7 @@
 		//-----------------------------//
 		//--   function start here   --//
 		function admin(){
-			include '../views/server_dashboard.php';
+			include '../views/dashboard.php';
 		}
 		function server_dashboard(){
 			include '../views/server_dashboard.php';

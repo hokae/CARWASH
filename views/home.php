@@ -18,10 +18,12 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4">
-            <h1 data-aos="fade-up">Jr<sup>s</sup> Car Wash</h1>
-            <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>MAKE YOUR VEHICLE BRIGHT AND SHINE! </p>
-            </blockquote>
+            <h1 data-aos="fade-up">
+              <div class="text-image " style="position: relative; padding-top: 300px;">
+                  <img src="../images/was.png" alt="">
+              </div>
+            </h1>
+            
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             </div>
           </div>
