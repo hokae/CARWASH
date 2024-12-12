@@ -1,6 +1,6 @@
 <?php
     include 'nav/header.php';
-    include '../model/server.php';
+ 
 ?>
 
 
