@@ -108,7 +108,7 @@
             </li>
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="services.php">
+                <a class="nav-link" href="../page/admin.php?sub_page=server_services">
                     <span>Services</span>
                 </a>
             </li>
