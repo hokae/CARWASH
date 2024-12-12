@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales</title>
+    <title>Product</title>
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -23,6 +23,7 @@
         align-items: flex-start; /* Adjusted from "top" to "flex-start" */
         min-height: 100vh;
         padding: 20px;
+        box-sizing: border-box;
     }
 
     /* Table styles */
@@ -67,54 +68,47 @@
 
     /* Improved text readability */
     th, td {
-        line-height: 5.5;
+        line-height: 1.6;
     }
 
+    /* Responsive design */
+    @media (max-width: 768px) {
+        table {
+            width: 100%;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px;
+        }
+    }
 </style>
-
 </head>
 <body>
 <div class="table-container">
     <table>
         <tr>
-            <th>Date</th>
-            <th>Customer's Name</th>
-            <th>Product Name</th>
-            <th>Unit Price</th>
-            <th>Total Sales</th>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <!-- Example of dynamically generated rows -->
+        <tr>
+            <td>Product 1</td>
+            <td>Example Product 1</td>
+            <td>This is a description of the first product.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Product 2</td>
+            <td>Example Product 2</td>
+            <td>This is a description of the second product.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Product 3</td>
+            <td>Example Product 3</td>
+            <td>This is a description of the third product.</td>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <!-- Additional rows can be added dynamically if needed -->
     </table>
-</div>  
-
+</div>
 </body>
 </html>
-
-

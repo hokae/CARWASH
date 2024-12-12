@@ -66,7 +66,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                <a class="nav-link collapsed" href="product.php" aria-expanded="true">
                     <span>Product</span>
                 </a>
             </li>
