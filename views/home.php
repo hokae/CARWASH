@@ -54,9 +54,9 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4">
-            <h1 data-aos="fade-up">Focus On What Matters</h1>
+            <h1 data-aos="fade-up">Jr<sup>s</sup> Car Wash</h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+              <p>MAKE YOUR VEHICLE BRIGHT AND SHINE! </p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             </div>
@@ -74,7 +74,7 @@
         <div class="row g-0">
 
           <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/why-us-bg.jpg" alt="">
+            <img src="../images/car.jpg" alt="">
           </div>
 
           <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -221,188 +221,6 @@
       </div>
 
     </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="../images/bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="mb-0">Powerful Features for</h3>
-            <h3>Your Business</h3>
-
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-eye" style="color: #ff8b2c;"></i>
-                  <span>Easy Cart Features</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-infinity" style="color: #5578ff;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-mortarboard" style="color: #e80368;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-star" style="color: #ffa76e;"></i>
-                  <span>Easy Cart Features</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
-                  <span>Easy Cart Features</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-camera-video" style="color: #4233ff;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-brightness-high" style="color: #29cc61;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
-                </div>
-              </div><!-- End Icon List Item-->
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-activity" style="color: #ff5828;"></i>
-                  <span>Easy Cart Features</span>
-                </div>
-              </div><!-- End Icon List Item-->
-            </div>
-          </div>
-          <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
-            <div class="phone-wrap">
-              <img src="assets/img/iphone.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="details">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-              <a href="#about" class="btn-get-started">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
-              </div>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Fri, September 05</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-              <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis doloribus...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, July 27</span>
-                <span class="post-author"> / Lisa Hunter</span>
-              </div>
-              <h3 class="post-title">Quia assumenda est et veritati</h3>
-              <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, Sep 16</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
-              <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum quia eligendi...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
-
   </main>
 
  <?php

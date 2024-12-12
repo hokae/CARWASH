@@ -106,7 +106,7 @@
 
         <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
           <div class="icon flex-shrink-0">
-            <img src="../images/3.jpg" alt="Service 4" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+            <img src="../images/coating.jpg" alt="Service 4" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
             <h4 class="title">Magni Dolores</h4>
@@ -117,7 +117,7 @@
 
         <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
           <div class="icon flex-shrink-0">
-            <img src="../images/3.jpg" alt="Service 5" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+            <img src="../images/tires.jpg" alt="Service 5" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
             <h4 class="title">Nemo Enim</h4>
@@ -128,7 +128,7 @@
 
         <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
           <div class="icon flex-shrink-0">
-            <img src="../images/3.jpg" alt="Service 6" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+            <img src="../images/under.jpg" alt="Service 6" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
             <h4 class="title">Eiusmod Tempor</h4>
@@ -156,7 +156,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-1.jpg" alt=""></div>
+                  <div class="card-bg"><img src="../images/oil.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -172,7 +172,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-5.jpg" alt=""></div>
+                  <div class="card-bg"><img src="../images/shine.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -188,7 +188,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-3.jpg" alt=""></div>
+                  <div class="card-bg"><img src="../images/mat.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -204,7 +204,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-4.jpg" alt=""></div>
+                  <div class="card-bg"><img src="../images/tire.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
