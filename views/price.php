@@ -6,6 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS File -->
+  <link href="../assets/dist/css/main.css" rel="stylesheet">
     <title>Premium Car Wash Services</title>
     <style>
         * {
@@ -184,6 +187,9 @@
     </div>
 </body>
 </html>
+
+<!-- Main JS File -->
+<script src="../assets/dist/js/main2.js"></script>
 <?php
     include 'nav/footer.php';
  ?>
