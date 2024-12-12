@@ -76,9 +76,12 @@
             <img src="../images/1.jpg" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
-            <h4 class="title">Lorem Ipsum</h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <h4 class="title">Eiusmod Tempor</h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -87,9 +90,12 @@
             <img src="../images/2.jpg" alt="Service 2" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
-            <h4 class="title">Dolor Sitema</h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <h4 class="title">Eiusmod Tempor</h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -98,9 +104,12 @@
             <img src="../images/3.jpg" alt="Service 3" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
-            <h4 class="title">Sed ut perspiciatis</h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <h4 class="title">Eiusmod Tempor</h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -109,9 +118,12 @@
             <img src="../images/coating.jpg" alt="Service 4" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
-            <h4 class="title">Magni Dolores</h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <h4 class="title">Eiusmod Tempor</h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -120,9 +132,12 @@
             <img src="../images/tires.jpg" alt="Service 5" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
           </div>
           <div>
-            <h4 class="title">Nemo Enim</h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <h4 class="title">Eiusmod Tempor</h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -133,7 +148,10 @@
           <div>
             <h4 class="title">Eiusmod Tempor</h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
+            <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+              <span>Book Now!</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div><!-- End Service Item -->
 
@@ -143,7 +161,11 @@
 
     </section><!-- /Services Section -->
 
-
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+      <h2>Our Products</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
 
     <!-- Service Cards Section -->
     <section id="service-cards" class="service-cards section">
@@ -159,9 +181,12 @@
                   <div class="card-bg"><img src="../images/oil.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                <div class="card-body">
+                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -178,11 +203,14 @@
                   <div class="card-body">
                     <h4 class="card-title">Possimus ut sed velit assumenda</h4>
                     <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card-item">
@@ -191,9 +219,12 @@
                   <div class="card-bg"><img src="../images/mat.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                   <div class="card-body">
+                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -207,9 +238,12 @@
                   <div class="card-bg"><img src="../images/tire.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                <div class="card-body">
+                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
