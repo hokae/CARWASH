@@ -1,77 +1,189 @@
+<?php
+    include 'nav/header.php';
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Carwash Pricelist Form</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 50%;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f0f0f0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Car Wash Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .service-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .service-details h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .service-details p {
+            color: #34495e;
+            font-weight: bold;
+        }
+        .booking-form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Carwash Pricelist Form</h1>
-  <table>
-    <tr>
-      <th>Service</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>Basic Car Wash</td>
-      <td>$10.00</td>
-    </tr>
-    <tr>
-      <td>Deluxe Car Wash</td>
-      <td>$20.00</td>
-    </tr>
-    <tr>
-      <td>Interior Cleaning</td>
-      <td>$30.00</td>
-    </tr>
-    <tr>
-      <td>Exterior Waxing</td>
-      <td>$40.00</td>
-    </tr>
-    <tr>
-      <td>Full Service Package</td>
-      <td>$60.00</td>
-    </tr>
-  </table>
-  <br>
-  <h2>Schedule an Appointment</h2>
-  <form>
-    <label for="service">Select a Service:</label>
-    <select id="service" name="service">
-      <option value="basic">Basic Car Wash</option>
-      <option value="deluxe">Deluxe Car Wash</option>
-      <option value="interior">Interior Cleaning</option>
-      <option value="exterior">Exterior Waxing</option>
-      <option value="full">Full Service Package</option>
-    </select>
-    <br>
-    <label for="vehicle">Select a Vehicle Type:</label>
-    <select id="vehicle" name="vehicle">
-      <option value="car">Car</option>
-      <option value="truck">Truck</option>
-      <option value="van">Van</option>
-      <option value="suv">SUV</option>
-    </select>
-    <br>
-    <label for="additional">Select Additional Services:</label>
-    <input type="checkbox" id="interior" name="additional" value="interior">
-    <label for="interior">Interior Cleaning</label>
-    <input type="checkbox" id="exterior" name="additional" value="exterior">
-    <label for="exterior">Exterior Waxing</label>
-    <br>
-    <input type="submit" value="Schedule Appointment">
-  </form>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Premium Car Wash Services</h1>
+            <p>Quality Cleaning at Affordable Prices</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://picsum.photos/seed/basic/400/300" alt="Basic Wash">
+                <div class="service-details">
+                    <h3>Basic Wash</h3>
+                    <p>$15 | Exterior Cleaning</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://picsum.photos/seed/deluxe/400/300" alt="Deluxe Wash">
+                <div class="service-details">
+                    <h3>Deluxe Wash</h3>
+                    <p>$30 | Exterior & Interior</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://picsum.photos/seed/premium/400/300" alt="Premium Wash">
+                <div class="service-details">
+                    <h3>Premium Wash</h3>
+                    <p>$50 | Complete Detailing</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://picsum.photos/seed/wax/400/300" alt="Wax & Shine">
+                <div class="service-details">
+                    <h3>Wax & Shine</h3>
+                    <p>$40 | Advanced Protection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <h2>Book Your Car Wash</h2>
+            <form>
+                <div class="form-group">
+                    <label>Service Type</label>
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option>Basic Wash</option>
+                        <option>Deluxe Wash</option>
+                        <option>Premium Wash</option>
+                        <option>Wax & Shine</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Your Phone" required>
+                </div>
+                <button type="submit" class="submit-btn">Schedule Appointment</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
+<?php
+    include 'nav/footer.php';
+ ?>
