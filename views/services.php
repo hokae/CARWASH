@@ -78,7 +78,7 @@
           <div>
             <h4 class="title">Lorem Ipsum</h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
@@ -89,7 +89,7 @@
           <div>
             <h4 class="title">Dolor Sitema</h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
@@ -100,7 +100,7 @@
           <div>
             <h4 class="title">Sed ut perspiciatis</h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
@@ -111,7 +111,7 @@
           <div>
             <h4 class="title">Magni Dolores</h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
@@ -122,7 +122,7 @@
           <div>
             <h4 class="title">Nemo Enim</h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
@@ -133,7 +133,7 @@
           <div>
             <h4 class="title">Eiusmod Tempor</h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="readmore stretched-link"><span>Book Now!</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div><!-- End Service Item -->
 
