@@ -48,29 +48,16 @@
 		function admin(){
 			include '../views/dashboard.php';
 		}
-		function server_dashboard(){
-			include '../views/server_dashboard.php';
+		function dashboard(){
+			include '../views/dashboard.php';
 		}
-		function tourAddress(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
+		function product(){
+			include '../views/product.php';
+		}
+		function sales(){
+			include '../views/sales.php';
 		}
 		
-		function tourDest(){
-			$admin = new AdminModel();
-			
-			$barangay = $admin->getBarangay();
-			$destination = $admin->getDestination();
-
-			
-			include '../views/server_tourDestination.php';
-		}
 	}
 	
 	
@@ -110,120 +97,6 @@
 			include '../views/server_tourAddress.php';
 		}
 		
-		function deleteProvince(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//delete province
-			$addProvince = $admin->deleteProvince($_GET);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
 		
-		function addMunicipality(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//add province
-			$addMunicipality = $admin->addMunicipality($_POST);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
-		
-		function deleteMunicipality(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//add province
-			$deleteMunicipality = $admin->deleteMunicipality($_GET);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
-		
-		function addBarangay(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//add province
-			$addBarangay = $admin->addBarangay($_POST);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
-		
-		function deleteBarangay(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//add province
-			$deleteBarangay = $admin->deleteBarangay($_GET);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
-		
-		function addTourDest(){
-			$admin = new AdminModel();
-			
-			$addDestination = $admin->addTourDest($_POST, $_FILES);
-			
-			$barangay = $admin->getBarangay();
-			$destination = $admin->getDestination();
-			
-			include '../views/server_tourDestination.php';
-		}
-		
-		function deleteDest(){
-			$admin = new AdminModel();
-			
-			$deleteDestination = $admin->deleteDest($_GET);
-			
-			$barangay = $admin->getBarangay();
-			$destination = $admin->getDestination();
-			
-			include '../views/server_tourDestination.php';
-		}
-
-		function updateProv(){
-			$model = new AdminModel();
-
-			$model->updateProv($_POST);
-
-			header("Location: ../page/admin.php?sub_page=tourAddress");
-		}
-
-		function updateMncp(){
-			$model = new AdminModel();
-
-			$model->updateMncp($_POST);
-
-			header("Location: ../page/admin.php?sub_page=tourAddress");
-		}
-
-		function updateBrgy(){
-			$model = new AdminModel();
-
-			$model->updateBrgy($_POST);
-
-			header("Location: ../page/admin.php?sub_page=tourAddress");
-		}
 	}
 ?>

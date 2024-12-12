@@ -44,7 +44,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard.php">
+                <a class="nav-link" href="../page/admin.php?sub_page=dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -59,14 +59,14 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="sales.php" aria-expanded="true">
+                <a class="nav-link collapsed" href="../page/admin.php?sub_page=sales" aria-expanded="true">
                     <span>Sales</span>
                 </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="product.php" aria-expanded="true">
+                <a class="nav-link collapsed" href="../page/admin.php?sub_page=product" aria-expanded="true">
                     <span>Product</span>
                 </a>
             </li>
