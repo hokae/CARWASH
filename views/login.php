@@ -51,7 +51,7 @@
                                     </div>
                                     <form action="../page/authentication.php?function=login&&sub_page=loggedin" method="POST" class="user">
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control form-control-user"
+                                            <input type="text" name="email" class="form-control form-control-user"
                                                 id="email" aria-label="email"
                                                 placeholder="Email" required>
                                         </div>
