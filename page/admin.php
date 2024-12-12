@@ -57,7 +57,9 @@
 		function sales(){
 			include '../views/sales.php';
 		}
-		
+		function server_services(){
+			include '../views/server_services.php';
+		}
 	}
 	
 	
