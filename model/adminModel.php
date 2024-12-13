@@ -197,7 +197,7 @@
 		
 		function deleteDest($get){
 			//prepare the sql
-			$sql = "DELETE FROM destinations_tb WHERE dstn_id = '{$get['id']}'";
+			$sql = "DELETE FROM  services_tb WHERE services_id = '{$get['id']}'";
 			//prepare query
 			$query = $this->conn->prepare($sql);
 			
