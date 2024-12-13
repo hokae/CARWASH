@@ -63,6 +63,9 @@
 		function server_services(){
 			include '../views/server_services.php';
 		}
+		function client(){
+			include '../views/client.php';
+		}
 	}
 	
 	

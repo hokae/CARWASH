@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 20px;
+    padding: 2px;
     width: 100%; /* Percentage width */
     max-width: 2000px; /* Max width for larger screens */
 }
