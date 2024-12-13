@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-item">
