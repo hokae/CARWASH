@@ -76,26 +76,31 @@ th, td {
 <div class="table-container">
     <table>
         <tr>
+            <th>ID</th>
             <th>Product</th>
             <th>Name</th>
             <th>Description</th>
         </tr>
         <!-- Example of dynamically generated rows -->
         <tr>
+            <td>1</td>
             <td>Product 1</td>
             <td>Example Product 1</td>
             <td>This is a description of the first product.</td>
         </tr>
         <tr>
+            <td>2</td>
             <td>Product 2</td>
             <td>Example Product 2</td>
             <td>This is a description of the second product.</td>
         </tr>
         <tr>
+            <td>3</td>
             <td>Product 3</td>
             <td>Example Product 3</td>
             <td>This is a description of the third product.</td>
         </tr>
+        
         <!-- Additional rows can be added dynamically if needed -->
     </table>
 </div>
