@@ -73,7 +73,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true" >
+                <a class="nav-link collapsed" href="../page/admin.php?sub_page=inventory" aria-expanded="true" >
                     <span>Inventory</span>
                 </a>
             </li>
