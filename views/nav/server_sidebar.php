@@ -95,27 +95,15 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.php">
-                    <span>Contact</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.php">
+                <a class="nav-link" href="../page/admin.php?sub_page=client">
                     <span>Clients</span>
                 </a>
             </li>
+            
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="../page/admin.php?sub_page=server_services">
                     <span>Services</span>
-                </a>
-            </li>
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.php">
-                    <span>Feedback</span>
                 </a>
             </li>
 
