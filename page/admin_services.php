@@ -1,9 +1,9 @@
 <?php
 	//import model
-	include_once '../model/addbookingsmodel.php';
+	include_once '../model/BookingModel.php';
 
-	$page_info['page'] = 'add_carwashbookings'; //for page that needs to be called
-	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'add_carwashbookings'; //for function to be loaded
+	$page_info['page'] = 'booking'; //for page that needs to be called
+	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'booking'; //for function to be loaded
 		
 	//-----------------------//
 	//--  validate contact  --//
@@ -14,10 +14,10 @@
 		//no active function, use the default page to view
 		if(isset($_GET['function'])){
 			
-			new Add_CarwashBookingsActive($page_info);
+			new BookingActive($page_info);
 		}else{
 
-			new Add_CarwashBookings($page_info);
+			new BookingModel($page_info);
 		}
 		
 	}catch (Throwable $e){ //get the encountered error
@@ -29,7 +29,7 @@
 	//-----------------------//
 	//--  Class Navigation --//
 	//-----------------------//
-	class Add_CarwashBookings{
+	class Booking{
 		//set default page info
 		private $page = '';
 		private $sub_page = '';
@@ -46,7 +46,7 @@
 		
 		//-----------------------------//
 		//--   function start here   --//
-		function add_carwashbookings(){
+		function booking(){
 			$admin = new BookingModel();
 
 			$services = $admin->get_service();
@@ -56,7 +56,7 @@
 
 	}
 
-	class Add_CarwashBookingsActive{
+	class BookingActive{
 		
 
 		private $page = '';
@@ -72,7 +72,7 @@
 		//run the function
 		$this->{$page_info['sub_page']}();
 	}
-	function add_carwashbookings(){
+	function booking(){
 		$admin = new BookingModel();
 
 		
@@ -85,7 +85,7 @@
 		$admin = new BookingModel();
 
 		$service = $admin->add_Service($_POST,$_FILES);
-
+		
 		$services = $admin->get_service();
 
 		
@@ -96,6 +96,7 @@
 	function services_delete(){
 
 		$admin = new BookingModel();
+		
 
 		$delete_service = $admin->service_delete($_GET);
 
@@ -120,7 +121,7 @@
 function services(){
 	$admin = new BookingModel();
 	$services = $admin->get_service();
-
+	
 	
 	include '../views/server_services.php';
 }

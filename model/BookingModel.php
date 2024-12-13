@@ -24,7 +24,7 @@ require_once 'server.php';
 				//upload the correct image
 				if (move_uploaded_file($file["image"]["tmp_name"], $target_file)) {
 					//pre sql statement
-                    $sql = "INSERT INTO `services_tb`(`service_name`,`service_image`,`description`,`price`) VALUES (?, ?, ?, ?)";
+                    $sql = "INSERT INTO `services_tb`(`services_name`,`services_image`,`services_description`,`services_price`) VALUES (?, ?, ?, ?)";
 
                     $query = $this->conn->prepare($sql);
         
@@ -72,9 +72,9 @@ require_once 'server.php';
         }
 
 
-		function updateSrvcs(){
+		function service_update(){
 			try{
-				$query = "UPDATE `services_tb` SET `service_name` = '{$_POST['service_name_input']}', `description` = '{$_POST['description_input']}' WHERE `services_id` = '{$_POST['services_id']}'";
+				$query = "UPDATE `services_tb` SET `services_name` = '{$_POST['services_name_input']}', `services_description` = '{$_POST['services_description_input']}' WHERE `services_id` = '{$_POST['services_id']}'";
 	
 				$stmt = $this->conn->prepare($query);
 	

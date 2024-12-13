@@ -1,5 +1,5 @@
 <?php
-	include '../model/admin_servicesModel.php';	//set page variables
+	include '../model/BookingModel.php';	//set page variables
 	$page_info['page'] = 'services'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'services'; //for function to be loaded
 
@@ -8,7 +8,7 @@
 	try {
 
 		if (isset($_GET['function'])){
-			new ServicesActive($page_info);
+			new ServicesPageActive($page_info);
 		}else{
 
 			new ServicesPage($page_info);

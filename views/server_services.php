@@ -1,6 +1,9 @@
 <?php 
     include 'nav/topnav.php'; 
     include 'nav/server_sidebar.php';
+    include_once '../model/BookingModel.php';
+    $model = new BookingModel();
+    $services = $model->get_service();
 ?>
     <!-- Begin Page Content -->
     <div class="container-fluid">
@@ -28,7 +31,7 @@
                 </button>
             </div>
         </div>
-    <form action="../page/Admin-services.php?function=addService&&sub_page=addService" align="right" method="POST" enctype= multipart/form-data>
+    <form action="../page/Admin_services.php?function=addService&&sub_page=addService" align="right" method="POST" enctype= multipart/form-data>
         <input type="text" class="form-control" name="name" placeholder="Service Name ">
         <input type="file" class="form-control" name="image">
             <textarea class="form-control"  name="desc" placeholder="Description"></textarea>
@@ -62,13 +65,13 @@
                                 <tr>
                                     <td style="text-align:center"><?= $n; ?></td>
                                     <td style="text-align:center">
-                                        <?=$srvc['service_name'] ?>
+                                        <?=$srvc['services_name'] ?>
                                     </td>
                                     <td style="text-align:center">
-                                        <img src="../images/<?= $srvc['service_image'] ?>" width="20px" height="20px" />
+                                        <img src="../images/<?= $srvc['services_image'] ?>" width="20px" height="20px" />
                                     </td>
-                                    <td style="text-align:center"><?= $srvc['description'] ?></td>
-                                    <td style="text-align:center"><?= $srvc['price'] ?></td>
+                                    <td style="text-align:center"><?= $srvc['services_description'] ?></td>
+                                    <td style="text-align:center"><?= $srvc['services_price'] ?></td>
                                     <td style="text-align:center">
                                         <a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="edit<?=$value['services_id']?>">Edit</a>  
                                         <a class="btn btn-sm btn-warning" href="../page/Admin-services.php?sub_page=services_delete&&function=services_delete&&services_id=<?= $srvc['services_id'] ?>" >Delete</a>
@@ -77,7 +80,7 @@
 
                                 <form action="../page/addbookingsmodel.php?function=updateSrvcs&&sub_page=updateSrcvs" method="post">	
                                     <input type="hidden" name="services_id" value="<?=$value['services_id']?>"> 
-                                <div class="modal fade" id="edit<?=$value['services_id']?>" tabindex="-1" aria-labelledby="<?= $value['service_name']?>Label" aria-hidden="true">
+                                <div class="modal fade" id="edit<?=$value['services_id']?>" tabindex="-1" aria-labelledby="<?= $value['services_name']?>Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -85,9 +88,9 @@
                                             </div>
                                             <div class="modal-body">
                                                 <label for="service_name">Services Name:</label>
-                                                <input type="text" name="service_name" class="form-control" value="<?=$value['service_name']?>"><br>
+                                                <input type="text" name="service_name" class="form-control" value="<?=$value['services_name']?>"><br>
                                                 <label for="service_info">Services label:</label><br>
-                                                <textarea name="service_name" class="form-control"><?=$value['description']?></textarea>
+                                                <textarea name="service_name" class="form-control"><?=$value['services_description']?></textarea>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="submit" class="btn btn-warning" data-bs-dismiss="modal">Update</button>
