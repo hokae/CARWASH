@@ -32,11 +32,12 @@
             <h2>Our Services</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
+        
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon flex-shrink-0">
-                        <img src="../images/1.jpg" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+                        <img src="../images/car.jpg" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
                     </div>
                     <div>
                         <h4 class="title">Eiusmod Tempor</h4>
@@ -49,13 +50,13 @@
                 </div><!-- End Service Item -->
                 <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon flex-shrink-0">
-                        <img src="../images/2.jpg" alt="Service 2" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+                        <img src="../images/wheel.jpg" alt="Service 2" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
                     </div>
                     <div>
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                         <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
@@ -68,7 +69,7 @@
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                         <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
@@ -81,7 +82,7 @@
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                         <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
@@ -94,7 +95,7 @@
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                         <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
@@ -107,7 +108,7 @@
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                         <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
