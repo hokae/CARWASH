@@ -1,5 +1,8 @@
 <?php
     include 'nav/header.php';
+    include_once '../model/BookingModel.php';
+    $model = new BookingModel();
+    $services = $model->get_service();
 ?>
 
 
@@ -35,84 +38,26 @@
         
         <div class="container">
             <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                <?php foreach ($services as $srvc){
+                    ?>
+                        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon flex-shrink-0">
-                        <img src="../images/car.jpg" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+                        <img src="../images/<?= $srvc['services_image'] ?>" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
                     </div>
                     <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                        <h4 class="title"><?=$srvc['services_name'] ?></h4>
+                        <p class="description"><?=$srvc['services_description'] ?></p>
                         <a href="../page/booking.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
                             <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                 </div><!-- End Service Item -->
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/wheel.jpg" alt="Service 2" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div><!-- End Service Item -->
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/3.jpg" alt="Service 3" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div><!-- End Service Item -->
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/coating.jpg" alt="Service 4" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div><!-- End Service Item -->
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/tires.jpg" alt="Service 5" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div><!-- End Service Item -->
-                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/under.jpg" alt="Service 6" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </div><!-- End Service Item -->
+                    <?php
+                }
+                 
+                ?>
+                
             </div>
         </div>
         <hr>
