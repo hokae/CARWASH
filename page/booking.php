@@ -1,17 +1,17 @@
 <?php
 	//import model
 
-	$page_info['page'] = 'price'; //for page that needs to be called
-	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'price'; //for function to be loaded
+	$page_info['page'] = 'booking'; //for page that needs to be called
+	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'booking'; //for function to be loaded
 		
 	//-----------------------//
-	//--  home  --//
+	//--  booking  --//
 	//-----------------------//
 	try {//used try to catch unfortunate errors
 		//check for active function
 		
 		//no active function, use the default page to view
-		new Price($page_info);
+		new Booking($page_info);
 		
 	}catch (Throwable $e){ //get the encountered error
 		echo '<h1>ERROR 404</h1>';
@@ -22,7 +22,7 @@
 	//-----------------------//
 	//--  Class Navigation --//
 	//-----------------------//
-	class Price{
+	class Booking{
 		//set default page info
 		private $page = '';
 		private $sub_page = '';
@@ -39,8 +39,8 @@
 		
 		//-----------------------------//
 		//--   function start here   --//
-		function price(){
-			include '../views/price.php';
+		function booking(){
+			include '../views/booking.php';
 		}
 	}
 ?>

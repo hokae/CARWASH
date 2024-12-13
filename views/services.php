@@ -3,6 +3,27 @@
 ?>
 
 
+    <body class="about-page">
+
+
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/about-page-title-bg.jpg);">
+            <div class="container">
+            <h1>Services</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                <li><a href="home.php">Home</a></li>
+                <li class="current">Services</li>
+                </ol>
+            </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <!-- About Section -->
+
 
         <!-- Services Section -->
         <section id="services" class="services section">
@@ -20,10 +41,10 @@
                     <div>
                         <h4 class="title">Eiusmod Tempor</h4>
                         <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        <button class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Book Now!</span>
+                        <a href="../page/booking.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+                            <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
-                        </button>
+                        </a>
                     </div>
                 </div><!-- End Service Item -->
                 <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">

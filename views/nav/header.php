@@ -61,8 +61,8 @@
             <li class="nav-item" <?php if($_GET['page']="services") { ?> class="active" <?php } ?>>
                 <a class="nav-link <?= $page == "services.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/services.php" ><b>Services</b></a>
             </li>
-            <li class="nav-item" <?php if($_GET['page']="price") { ?> class="active" <?php } ?>>
-                <a class="nav-link <?= $page == "price.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/price.php" ><b>Price</b></a>
+            <li class="nav-item" <?php if($_GET['page']="booking") { ?> class="active" <?php } ?>>
+                <a class="nav-link <?= $page == "booking.php"? 'active bg-gradient-primary':'' ; ?> " href="../page/booking.php" ><b>Booking</b></a>
             </li>
             <li><a href="../page/contact.php" style="background-color: red; border-radius: 10px; padding: 5px 10px; color: black; text-decoration: none; font-weight:bold;">Contact Us</a></li>
             <!-- Log Out Button with Icon -->
