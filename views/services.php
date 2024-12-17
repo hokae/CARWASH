@@ -33,7 +33,6 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Our Services</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
         
         <div class="container">
@@ -65,7 +64,6 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Our Products</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div><!-- End Section Title -->
         </section><!-- /Services Section -->
         <!-- Service Cards Section -->
