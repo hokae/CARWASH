@@ -105,6 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <label for="number">Phone Number:</label>
                                             <input type="text" name="number" id="number" class="form-control" required><br><br>
 
+                                            <label for="number">select services:</label>
+                                            <input type="text" name="number" id="number" value="<?= $srvc['services_name'] ?>" class="form-control" required><br><br>
+
                                             <label for="date">Booking Date:</label>
                                             <input type="date" name="date" id="date" class="form-control" required><br><br>
 
