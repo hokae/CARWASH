@@ -84,7 +84,7 @@
                                 <td style="text-align:center"><?= $srvc['services_price'] ?></td>
                                 <td style="text-align:center">
                                     <a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#edit<?= $srvc['services_id'] ?>">Edit</a>  
-                                    <a class="btn btn-sm btn-warning" href="../page/Admin-services.php?sub_page=services_delete&&function=services_delete&&services_id=<?= $srvc['services_id'] ?>">Delete</a>
+                                    <a class="btn btn-sm btn-warning" href="../page/Admin-services.php?sub_page=services_delete&function=services_delete&services_id=<?= urlencode($srvc['services_id']) ?>">Delete</a>
                                 </td>
                             </tr>
 
