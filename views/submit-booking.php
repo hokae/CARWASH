@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $booking_time = $_POST['booking_time'];
 
     // Input validation (basic)
-    if (empty($booking_fullname) || empty($booking_email) || empty($booking_number) || empty($booking_services_id) || empty($booking_date) || empty($booking_time)) {
+    if (empty($booking_fullname) || empty($booking_email) || empty($booking_number) || empty($booking_date) || empty($booking_time)) {
         echo "All fields are required!";
         exit;
     }
@@ -35,8 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Execute the query to insert the booking
     if ($connector->executeUpdate($sql, $params)) {
-        echo "Your booking has been successfully submitted!";
-    } else {
+        echo "Your booking has been successfully submitted!"; 
         echo "There was an error submitting your booking.";
     }
 }

@@ -39,6 +39,75 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        h2 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        /* Table styling */
+        .table {
+            margin: 0 auto;
+            width: 95%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* Table header styling */
+        .table thead {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Table row hover effect */
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Link styling for action button */
+        .btn-approve {
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn-approve:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .table th, .table td {
+                padding: 8px;
+            }
+
+            .btn-approve {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 
   <header id="header" class="header d-flex align-items-center fixed-top">

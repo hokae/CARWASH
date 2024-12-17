@@ -1,9 +1,46 @@
 <?php
     include 'nav/header.php';
     include_once '../model/BookingModel.php';
+    include_once '../model/Booking_Model.php';
     $model = new BookingModel();
     $services = $model->get_service();
+   
+
+// Create an instance of Booking_Model
+$bookingModel = new Booking_Model();
+
+// Get all services
+$services = $bookingModel->get_service();
+
+// Include the Connector class
+require_once '../model/server.php';
+$connector = new Connector();
+
+// Fetch all bookings that are pending approval
+$sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time FROM booking_tb WHERE booking_status = 'pending'";
+$bookings = $connector->executeQuery($sql);
+
+// Handle form submission
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get form data
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $number = $_POST['number'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
+    $service_id = $_POST['service_id'];  // Get the selected service ID from the form
+
+    // Attempt to insert the booking
+    $result = $bookingModel->insert_booking($fullname, $email, $number, $date, $time, $service_id);
+
+    if ($result === true) {
+        echo "Booking successfully added!";
+    } else {
+        echo $result;  // Display error message if any
+    }
+}
 ?>
+
 
 
     <body class="about-page">
@@ -12,85 +49,78 @@
 
     <main class="main">
 
-        <!-- Page Title -->
-        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/about-page-title-bg.jpg);">
+  <!-- Page Title -->
+  <div class="page-title dark-background" style="background-image: url(assets/img/about-page-title-bg.jpg);">
             <div class="container">
-            <h1>Services</h1>
-            <nav class="breadcrumbs">
-                <ol>
-                <li><a href="home.php">Home</a></li>
-                <li class="current">Services</li>
-                </ol>
-            </nav>
+                <h1>Services</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="home.php">Home</a></li>
+                        <li class="current">Services</li>
+                    </ol>
+                </nav>
             </div>
-        </div><!-- End Page Title -->
-
-        <!-- About Section -->
-
+        </div>
 
         <!-- Services Section -->
         <section id="services" class="services section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Our Services</h2>
-        </div><!-- End Section Title -->
-        
-        <div class="container">
-            <div class="row gy-4">
-                <?php foreach ($services as $srvc): ?>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0">
-                            <img src="../images/<?= $srvc['services_image'] ?>" alt="<?= $srvc['services_name'] ?>" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="container">
+                <div class="row gy-4">
+                    <?php foreach ($services as $srvc): ?>
+                        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+                            <div class="icon flex-shrink-0">
+                                <img src="../images/<?= $srvc['services_image'] ?>" alt="<?= $srvc['services_name'] ?>" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h4 class="title"><?= $srvc['services_name'] ?></h4>
+                                <p class="description"><?= $srvc['services_description'] ?></p>
+                                <button type="button" class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal<?= $srvc['services_id'] ?>">
+                                    <span>Select Services</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="title"><?= $srvc['services_name'] ?></h4>
-                            <p class="description"><?= $srvc['services_description'] ?></p>
-                            <!-- Button that triggers the modal for the specific service -->
-                            <button type="button" class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal<?= $srvc['services_id'] ?>" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                                <span>Select Services</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div><!-- End Service Item -->
 
-                    <!-- Modal for Booking Form for each service -->
-                    <div class="modal fade" id="bookingModal<?= $srvc['services_id'] ?>" tabindex="-1" aria-labelledby="bookingModalLabel<?= $srvc['services_id'] ?>" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="bookingModalLabel<?= $srvc['services_id'] ?>">Book Your Service: <?= $srvc['services_name'] ?></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="../page/submit-booking.php" method="POST">
-                                        <label for="booking_fullname">Full Name:</label>
-                                        <input type="text" name="booking_fullname" id="booking_fullname" class="form-control" required><br><br>
+                        <!-- Modal for Booking Form -->
+                        <div class="modal fade" id="bookingModal<?= $srvc['services_id'] ?>" tabindex="-1" aria-labelledby="bookingModalLabel<?= $srvc['services_id'] ?>" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="bookingModalLabel<?= $srvc['services_id'] ?>">Book Your Service: <?= $srvc['services_name'] ?></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="../page/submit-booking.php" method="POST">
+                                            <input type="hidden" name="service_id" value="<?= $srvc['services_id'] ?>" />
+                                            <label for="fullname">Full Name:</label>
+                                            <input type="text" name="fullname" id="fullname" class="form-control" required><br><br>
 
-                                        <label for="booking_email">Email:</label>
-                                        <input type="email" name="booking_email" id="booking_email" class="form-control" required><br><br>
+                                            <label for="email">Email:</label>
+                                            <input type="email" name="email" id="email" class="form-control" required><br><br>
 
-                                        <label for="booking_number">Phone Number:</label>
-                                        <input type="text" name="booking_number" id="booking_number" class="form-control" required><br><br>
+                                            <label for="number">Phone Number:</label>
+                                            <input type="text" name="number" id="number" class="form-control" required><br><br>
 
-                                        <label for="booking_services_id">Select Service:</label>
-                                        <input type="text" name="booking_services_id" value="<?= $srvc['services_name'] ?>" readonly class="form-control mb-2" required><br><br>
+                                            <label for="date">Booking Date:</label>
+                                            <input type="date" name="date" id="date" class="form-control" required><br><br>
 
-                                        <label for="booking_date">Booking Date:</label>
-                                        <input type="date" name="booking_date" id="booking_date" class="form-control" required><br><br>
+                                            <label for="time">Booking Time:</label>
+                                            <input type="time" name="time" id="time" class="form-control" required><br><br>
 
-                                        <label for="booking_time">Booking Time:</label>
-                                        <input type="time" name="booking_time" id="booking_time" class="form-control" required><br><br>
-
-                                        <button type="submit" class="btn btn-primary">Submit Booking</button>
-                                    </form>
+                                            <button type="submit" class="btn btn-primary">Submit Booking</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Modal -->
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
-        </div>
+        </section>
 
         <hr>
         <section class="py-5 text-center container">

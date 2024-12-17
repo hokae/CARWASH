@@ -1,6 +1,15 @@
 <?php
     include 'nav/header.php';
- 
+        // Include the Connector class
+        require_once '../model/server.php';
+
+        // Instantiate the Connector class
+        $connector = new Connector();
+    
+        // Fetch all bookings that are pending approval
+        $sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time FROM booking_tb WHERE booking_status = 'pending'";
+    
+        $bookings = $connector->executeQuery($sql);
 ?>
 
 <link rel="stylesheet" href="../assets/dist/css/book.css">
@@ -22,11 +31,38 @@
                 </nav>
             </div>
         </div>
-
-      
-
+        <hr>
+        <div class="container">
+            
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <?php foreach ($bookings as $booking): ?>
+                        <tr>
+                            <td><?php echo $booking['booking_fullname']; ?></td>
+                            <td><?php echo $booking['booking_email']; ?></td>
+                            <td><?php echo $booking['booking_number']; ?></td>
+                            <td><?php echo $booking['booking_date']; ?></td>
+                            <td><?php echo $booking['booking_time']; ?></td>
+                            <td>
+                                <a value="<?php echo $booking['booking_id']; ?>" class="btn-approve">pending</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
     </main>
-  
+    <hr>
     
 
 
