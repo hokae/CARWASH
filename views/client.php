@@ -1,6 +1,16 @@
 <?php
     include 'nav/topnav.php';
     include 'nav/server_sidebar.php';
+    // Include the Connector class
+    require_once '../model/server.php';
+
+    // Instantiate the Connector class
+    $connector = new Connector();
+
+    // Fetch all bookings that are pending approval
+    $sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time FROM booking_tb WHERE booking_status = 'pending'";
+
+    $bookings = $connector->executeQuery($sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,108 +20,108 @@
     <title>Customer Bookings</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .table-container {
-            max-width: 2000px; /* Adjust the maximum width here */
-            margin-top: 30px auto; /* Centers the container */
-            padding: 2px; /* Adds padding inside the container */
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
         }
 
-        .btn {
-            margin-right: 5px;
+        /* Header styling */
+        h2 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 30px;
         }
 
-        th {
-            background-color: #4e73df;
-            color: white ;
-        }    
+        /* Table styling */
+        .table {
+            margin: 0 auto;
+            width: 95%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* Table header styling */
+        .table thead {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Table row hover effect */
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Link styling for action button */
+        .btn-approve {
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn-approve:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .table th, .table td {
+                padding: 8px;
+            }
+
+            .btn-approve {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 
-<div class="container table-container">
-    <table class="table table-bordered">
+<div class="container">
+    <h2>Pending Bookings</h2>
+    <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th>No.</th>
-                <th>Customers</th>
-                <th>Book ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
                 <th>Date</th>
-                <th>Status</th>
+                <th>Time</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>John Doe</td>
-                <td>101</td>
-                <td>2023-10-01</td>
-                <td>Confirmed</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Jane Smith</td>
-                <td>102</td>
-                <td>2023-10-02</td>
-                <td>Pending</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Mark Johnson</td>
-                <td>103</td>
-                <td>2023-10-03</td>
-                <td>Confirmed</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Emily Davis</td>
-                <td>104</td>
-                <td>2023-10-04</td>
-                <td>Cancelled</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Michael Brown</td>
-                <td>105</td>
-                <td>2023-10-05</td>
-                <td>Pending</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Sarah Wilson</td>
-                <td>106</td>
-                <td>2023-10-06</td>
-                <td>Confirmed</td>
-                <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
-            </tr>
+            <?php foreach ($bookings as $booking): ?>
+                <tr>
+                    <td><?php echo $booking['booking_fullname']; ?></td>
+                    <td><?php echo $booking['booking_email']; ?></td>
+                    <td><?php echo $booking['booking_number']; ?></td>
+                    <td><?php echo $booking['booking_date']; ?></td>
+                    <td><?php echo $booking['booking_time']; ?></td>
+                    <td>
+                        <a href="admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn-approve">Approve</a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
         </tbody>
     </table>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

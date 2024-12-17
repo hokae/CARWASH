@@ -42,5 +42,8 @@
 		function booking(){
 			include '../views/booking.php';
 		}
+		function pending(){
+			include '../views/pending.php';
+		}
 	}
 ?>

@@ -91,30 +91,7 @@
 		
 		//-----------------------------//
 		//--   function start here   --//
-		function addServices(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			//add province
-			$addServices = $admin->addServices($_POST);
-			
-			$province = $admin->getProvince();
-			$municipality = $admin->getMunicipality();
-			$barangay = $admin->getBarangay();
-			
-			include '../views/server_tourAddress.php';
-		}
-
-		function deleteServices(){
-			$admin = new AdminModel();
-			
-			$deleteDestination = $admin->deleteDest($_GET);
-			
-			$barangay = $admin->getBarangay();
-			$destination = $admin->getDestination();
-			
-			include '../views/server_services.php';
-		}
+		
 		
 		
 	}

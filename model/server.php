@@ -17,6 +17,29 @@ class Connector{
 			echo "Connection failed: " . $e->getMessage();
 		}
 	}
+
+	 // Method to execute update queries (INSERT, UPDATE, DELETE)
+	 public function executeUpdate($sql, $params) {
+        try {
+            $stmt = $this->conn->prepare($sql); // Prepare the SQL query
+            return $stmt->execute($params);    // Execute the query with parameters
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
+    }
+
+    // Method to execute select queries and fetch results
+    public function executeQuery($sql, $params = []) {
+        try {
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute($params);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC); // Return all results as an associative array
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
+    }
 }
 
 
