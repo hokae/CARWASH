@@ -37,43 +37,58 @@
         
         <div class="container">
             <div class="row gy-4">
-                <?php foreach ($services as $srvc) { ?>
+                <?php foreach ($services as $srvc): ?>
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0">
-                            <img src="../images/<?= $srvc['services_image'] ?>" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+                            <img src="../images/<?= $srvc['services_image'] ?>" alt="<?= $srvc['services_name'] ?>" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
                         </div>
                         <div>
                             <h4 class="title"><?= $srvc['services_name'] ?></h4>
                             <p class="description"><?= $srvc['services_description'] ?></p>
-                            <!-- Button to trigger modal -->
-                            <button class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal<?= $srvc['services_id'] ?>" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                                <span>Book now</span>
+                            <!-- Button that triggers the modal for the specific service -->
+                            <button type="button" class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal<?= $srvc['services_id'] ?>" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+                                <span>Select Services</span>
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </div>
                     </div><!-- End Service Item -->
 
-                    <!-- Modal for the specific service -->
-                    <div class="modal fade" id="serviceModal<?= $srvc['services_id'] ?>" tabindex="-1" aria-labelledby="serviceModalLabel<?= $srvc['services_id'] ?>" aria-hidden="true">
+                    <!-- Modal for Booking Form for each service -->
+                    <div class="modal fade" id="bookingModal<?= $srvc['services_id'] ?>" tabindex="-1" aria-labelledby="bookingModalLabel<?= $srvc['services_id'] ?>" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="serviceModalLabel<?= $srvc['services_id'] ?>"><?= $srvc['services_name'] ?></h5>
+                                    <h5 class="modal-title" id="bookingModalLabel<?= $srvc['services_id'] ?>">Book Your Service: <?= $srvc['services_name'] ?></h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="../images/<?= $srvc['services_image'] ?>" alt="<?= $srvc['services_name'] ?>" class="img-fluid mb-3" style="width: 100%; height: auto;">
-                                    <p><?= $srvc['services_description'] ?></p>
-                                    <!-- Add more service details here -->
-                                    <a href="../page/booking.php" class="btn btn-primary">
-                                        <span>Add booking</span>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
+                                    <form action="../page/submit-booking.php" method="POST">
+                                        <label for="booking_fullname">Full Name:</label>
+                                        <input type="text" name="booking_fullname" id="booking_fullname" class="form-control" required><br><br>
+
+                                        <label for="booking_email">Email:</label>
+                                        <input type="email" name="booking_email" id="booking_email" class="form-control" required><br><br>
+
+                                        <label for="booking_number">Phone Number:</label>
+                                        <input type="text" name="booking_number" id="booking_number" class="form-control" required><br><br>
+
+                                        <label for="booking_services_id">Select Service:</label>
+                                        <input type="text" name="booking_services_id" value="<?= $srvc['services_name'] ?>" readonly class="form-control mb-2" required><br><br>
+
+                                        <label for="booking_date">Booking Date:</label>
+                                        <input type="date" name="booking_date" id="booking_date" class="form-control" required><br><br>
+
+                                        <label for="booking_time">Booking Time:</label>
+                                        <input type="time" name="booking_time" id="booking_time" class="form-control" required><br><br>
+
+                                        <button type="submit" class="btn btn-primary">Submit Booking</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Modal -->
-                <?php } ?>
+                    </div>
+                    <!-- End Modal -->
+                <?php endforeach; ?>
             </div>
         </div>
 
@@ -96,8 +111,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Gulf Oil</h4>
-                                        <p>Gulf oil refers to the vast petroleum reserves in the Gulf of Mexico, crucial for global energy production. The region is home to numerous offshore oil rigs that extract crude oil, which is refined into products like gasoline and diesel. While the Gulf is a major economic asset, it has also raised environmental concerns, particularly after incidents like the 2010 BP Deepwater Horizon spill. Despite these challenges, Gulf oil remains essential to the global energy market.</p>
+                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
                                         <div class="d-flex justify-content-end">
                                                 <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -114,8 +129,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Ultra Shine</h4>
-                                        <p>Ultra Shine Wax is a high-performance car wax that provides a glossy finish and long-lasting protection. It creates a smooth, water-resistant layer that shields the paint from UV rays, dirt, and water, while enhancing the vehicle's shine. Known for its easy application and quick drying, it helps maintain a clean, fresh appearance for longer.</p>
+                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -132,8 +147,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Wash Pad</h4>
-                                        <p>Our complete range of high-quality car care products is specially designed to make it faster and easier for you to keep your car looking in showroom condition – both inside and out. Give your car’s exterior and interior a streak-free finish with our microfiber car duster.</p>
+                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -150,8 +165,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Tire</h4>
-                                        <p>Our tire is the best choice for your vehicle, offering unmatched traction, support, and durability. Engineered with a high-quality blend of rubber, steel, and fabric, our tire delivers superior performance on all road conditions, from smooth highways to rugged terrains. </p>   
+                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
