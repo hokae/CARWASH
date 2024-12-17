@@ -132,7 +132,7 @@
                     <div>
                         <h4 class="title"><?=$srvc['services_name'] ?></h4>
                         <p class="description"><?=$srvc['services_description'] ?></p>
-                        <a href="../page/booking.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+                        <a href="../page/services.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
                             <span>Select Services</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
