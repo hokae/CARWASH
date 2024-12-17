@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <h4 class="title"><?= $srvc['services_name'] ?></h4>
                                 <p class="description"><?= $srvc['services_description'] ?></p>
                                 <button type="button" class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal<?= $srvc['services_id'] ?>">
-                                    <span>Select Services</span>
+                                    <span>Book Now!</span>
                                     <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
