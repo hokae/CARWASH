@@ -78,8 +78,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Gulf Oil</h4>
+                                        <p>Gulf oil refers to the vast petroleum reserves in the Gulf of Mexico, crucial for global energy production. The region is home to numerous offshore oil rigs that extract crude oil, which is refined into products like gasoline and diesel. While the Gulf is a major economic asset, it has also raised environmental concerns, particularly after incidents like the 2010 BP Deepwater Horizon spill. Despite these challenges, Gulf oil remains essential to the global energy market.</p>
                                         <div class="d-flex justify-content-end">
                                                 <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -96,8 +96,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Ultra Shine</h4>
+                                        <p>Ultra Shine Wax is a high-performance car wax that provides a glossy finish and long-lasting protection. It creates a smooth, water-resistant layer that shields the paint from UV rays, dirt, and water, while enhancing the vehicle's shine. Known for its easy application and quick drying, it helps maintain a clean, fresh appearance for longer.</p>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -114,8 +114,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Wash Pad</h4>
+                                        <p>Our complete range of high-quality car care products is specially designed to make it faster and easier for you to keep your car looking in showroom condition – both inside and out. Give your car’s exterior and interior a streak-free finish with our microfiber car duster.</p>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
@@ -132,8 +132,8 @@
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Tire</h4>
+                                        <p>Our tire is the best choice for your vehicle, offering unmatched traction, support, and durability. Engineered with a high-quality blend of rubber, steel, and fabric, our tire delivers superior performance on all road conditions, from smooth highways to rugged terrains. </p>   
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-success ml-2" style="background-color: #28a745; border-color: #28a745; color: #fff;">Buy Now</button>
                                         </div>
