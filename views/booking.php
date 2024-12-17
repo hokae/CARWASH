@@ -10,7 +10,10 @@
         $sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time FROM booking_tb WHERE booking_status = 'pending'";
     
         $bookings = $connector->executeQuery($sql);
+        
+
 ?>
+
 
 <link rel="stylesheet" href="../assets/dist/css/book.css">
 <body class="about-page">
@@ -64,6 +67,9 @@
     </main>
     <hr>
     
+
+    
+
 
 
  <?php
