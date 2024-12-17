@@ -22,7 +22,7 @@
           <li><a href="home.php">Home</a></li>
           <li><a href="about.php">About us</a></li>
           <li><a href="services.php">Services</a></li>
-          <li><a href="price.php">Price</a></li>
+          <li><a href="booking.php">Booking</a></li>
         </ul>
       </div>
 
