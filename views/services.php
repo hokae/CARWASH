@@ -37,28 +37,46 @@
         
         <div class="container">
             <div class="row gy-4">
-                <?php foreach ($services as $srvc){
-                    ?>
-                        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/<?= $srvc['services_image'] ?>" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title"><?=$srvc['services_name'] ?></h4>
-                        <p class="description"><?=$srvc['services_description'] ?></p>
-                        <a href="../page/booking.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div><!-- End Service Item -->
-                    <?php
-                }
-                 
-                ?>
-                
+                <?php foreach ($services as $srvc) { ?>
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0">
+                            <img src="../images/<?= $srvc['services_image'] ?>" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
+                        </div>
+                        <div>
+                            <h4 class="title"><?= $srvc['services_name'] ?></h4>
+                            <p class="description"><?= $srvc['services_description'] ?></p>
+                            <!-- Button to trigger modal -->
+                            <button class="readmore btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal<?= $srvc['services_id'] ?>" style="background-color: #007bff; border-color: #007bff; color: #fff;">
+                                <span>Book now</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <!-- Modal for the specific service -->
+                    <div class="modal fade" id="serviceModal<?= $srvc['services_id'] ?>" tabindex="-1" aria-labelledby="serviceModalLabel<?= $srvc['services_id'] ?>" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="serviceModalLabel<?= $srvc['services_id'] ?>"><?= $srvc['services_name'] ?></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/<?= $srvc['services_image'] ?>" alt="<?= $srvc['services_name'] ?>" class="img-fluid mb-3" style="width: 100%; height: auto;">
+                                    <p><?= $srvc['services_description'] ?></p>
+                                    <!-- Add more service details here -->
+                                    <a href="../page/booking.php" class="btn btn-primary">
+                                        <span>Add booking</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Modal -->
+                <?php } ?>
             </div>
         </div>
+
         <hr>
         <section class="py-5 text-center container">
             <!-- Section Title -->

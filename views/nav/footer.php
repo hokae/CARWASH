@@ -74,6 +74,7 @@
 <!-- Main JS File -->
 <script src="../assets/dist/js/main2.js"></script>
 
+
 </body>
 
 </html>
