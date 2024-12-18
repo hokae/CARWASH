@@ -99,11 +99,7 @@
                     <span>Services</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../page/admin.php?sub_page=inquire">
-                    <span>Inquiries</span>
-                </a>
-            </li>
+           
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
