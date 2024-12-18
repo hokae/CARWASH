@@ -93,7 +93,7 @@
           </div>
 
           <div class="col-lg-7">
-          <form action="../page/inquire.php" method="POST" class="php-form" >
+          <form action="../page/send-email.php" method="POST" id="contact-form" class="php-email-form" >
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -116,6 +116,7 @@
 
               </div>
             </form>
+          
           </div><!-- End Contact Form -->
 
         </div>
@@ -126,7 +127,7 @@
 
   </main>
 
- 
+
 
 <?php
 	include 'nav/footer.php';
