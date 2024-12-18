@@ -84,16 +84,16 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="../images/img/cta-bg.jpg" alt="">
+      <img src="../images/bgk.jpg" alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
-            <div class="text-center">
-              <h3>dgdgdfg</h3>
-              <p></p>
-              <a class="cta-btn" href="#">dd</a>
-            </div>
+          <div class="text-center">
+            <h3>Get Your Car Washed Today!</h3>
+            <p>Experience the best car wash service to make your car shine like new. Fast, affordable, and high-quality cleaning.</p>
+            <a class="cta-btn" href="services.php">Book Now</a>
+          </div>
           </div>
         </div>
       </div>
