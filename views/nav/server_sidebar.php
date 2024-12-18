@@ -86,13 +86,6 @@
                 Addons
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
-                    <span>Address</span>
-                </a>
-            </li>
-
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="../page/admin.php?sub_page=client">
