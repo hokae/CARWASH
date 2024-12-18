@@ -19,6 +19,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Bookings</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        // Check the URL for the "approved" query parameter
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const approved = urlParams.get('approved');
+            
+            // Show the alert if the 'approved' parameter is set to true
+            if (approved === 'true') {
+                alert('Booking has been approved!');
+            } else if (approved === 'false') {
+                alert('There was an error approving the booking.');
+            }
+        }
+    </script>
     <style>
         /* Basic page styling */
         body {
@@ -86,6 +100,17 @@
                 font-size: 12px;
             }
         }
+        .btn-approve {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn-approve:hover {
+        background-color: #45a049;
+    }
     </style>
 </head>
 <body>
@@ -112,11 +137,14 @@
                     <td><?php echo $booking['booking_date']; ?></td>
                     <td><?php echo $booking['booking_time']; ?></td>
                     <td>
+                        <!-- Link to approve booking, passing the booking_id as a parameter -->
                         <a href="admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn-approve">Approve</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
+    </table>
+        
     </table>
 </div>
 
