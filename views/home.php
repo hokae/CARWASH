@@ -71,37 +71,38 @@
               </script>
               <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Let's grow your business together</h3>
-                    <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam perferendis asperiores explicabo vel tempore velit totam, natus nesciunt accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas sapiente optio.</p>
-                  </div>
-                </div><!-- End slide item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Grow your car wash business with us</h3>
+                  <h4 class="mb-3">Optimize your services and stand out in the competitive market.</h4>
+                  <p>Running a successful car wash business requires attention to detail, top-notch service, and the ability to adapt to customer needs. By focusing on high-quality equipment, eco-friendly practices, and exceptional customer service, your business can become the go-to choice for every car owner in town.</p>
+                </div>
+              </div><!-- End slide item -->
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                    <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam quis.</h4>
-                    <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
-                  </div>
-                </div><!-- End slide item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Innovation drives your car wash growth</h3>
+                  <h4 class="mb-3">Embrace new technologies and provide excellent customer care.</h4>
+                  <p>Innovation and efficient technology are key in the car wash business. By integrating automated systems, optimizing water usage, and offering additional services like waxing or detailing, you can significantly boost customer satisfaction and improve operational efficiency.</p>
+                </div>
+              </div><!-- End slide item -->
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Aliquid non alias minus</h3>
-                    <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.</h4>
-                    <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim dolorum fugiat aut.</p>
-                  </div>
-                </div><!-- End slide item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Stand out in the competitive car wash industry</h3>
+                  <h4 class="mb-3">Improve service offerings and keep customers coming back.</h4>
+                  <p>To stand out in a competitive car wash industry, it’s essential to constantly improve your service offerings. By focusing on customer retention strategies, introducing loyalty programs, and keeping up with the latest trends in eco-friendly car care, you can ensure long-term success and growth.</p>
+                </div>
+              </div><!-- End slide item -->
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                    <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum soluta nihil est. Eum similique neque autem ut.</h4>
-                    <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui animi animi rerum.</p>
-                  </div>
-                </div><!-- End slide item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Enhance customer experience for better results</h3>
+                  <h4 class="mb-3">Provide fast, quality service in a clean, welcoming environment.</h4>
+                  <p>Improving your car wash business also means improving customer experience. By offering personalized services, efficient turnarounds, and maintaining a clean, welcoming environment, you can enhance customer satisfaction and drive repeat business.</p>
+                </div>
+              </div><!-- End slide item -->
+
 
               </div>
               <div class="swiper-pagination"></div>
@@ -117,39 +118,7 @@
 
     </section><!-- /Why Us Section -->
      
-    <div class="container section-title" data-aos="fade-up">
-            <h2>Our Services</h2>
-              </div>
-
-    <div class="container">
-            <div class="row gy-4">
-                <?php foreach ($services as $srvc){
-                    ?>
-                        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon flex-shrink-0">
-                        <img src="../images/<?= $srvc['services_image'] ?>" alt="Service 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;">
-                    </div>
-                    <div>
-                        <h4 class="title"><?=$srvc['services_name'] ?></h4>
-                        <p class="description"><?=$srvc['services_description'] ?></p>
-                        <a href="../page/services.php" class="readmore btn btn-primary stretched-link" style="background-color: #007bff; border-color: #007bff; color: #fff;">
-                            <span>Select Services</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div><!-- End Service Item -->
-                    <?php
-                }
-                 
-                ?>
-                
-            </div>
-        </div>
-
-          
-        </div>
-
-      </div>
+    
 
     </section><!-- /Services Section -->
   </main>
