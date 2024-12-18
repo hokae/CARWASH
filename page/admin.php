@@ -66,6 +66,9 @@
 		function client(){
 			include '../views/client.php';
 		}
+		function inquire(){
+			include '../views/inquire.php';
+		}
 	}
 	
 	

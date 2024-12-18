@@ -48,5 +48,7 @@
 			
 			include '../views/contact.php';
 		}
+		
+
 	}
 ?>
