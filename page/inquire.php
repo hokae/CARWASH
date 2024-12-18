@@ -1,18 +1,18 @@
 <?php
 	//import model
-	include_once '../model/contact_model.php';
+	include_once '../model/inquire_model.php';
 
-	$page_info['page'] = 'contact'; //for page that needs to be called
-	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'contact'; //for function to be loaded
+	$page_info['page'] = 'inquire'; //for page that needs to be called
+	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'inquire'; //for function to be loaded
 		
 	//-----------------------//
 	//--     --//
 	//-----------------------//
 	try {//used try to catch unfortunate errors
 		//check for active function
-		$contact = new ContactModel();
+		$inquire = new InquireModel();
 		//no active function, use the default page to view
-		new Contact($page_info);
+		new Inquire($page_info);
 		
 	}catch (Throwable $e){ //get the encountered error
 		echo '<h1>ERROR 404</h1>';
@@ -23,7 +23,7 @@
 	//-----------------------//
 	//--  Class Navigation --//
 	//-----------------------//
-	class Contact{
+	class Inquire{
 		//set default page info
 		private $page = '';
 		private $sub_page = '';
@@ -40,14 +40,16 @@
 		
 		//-----------------------------//
 		//--   function start here   --//
-		function contact(){
-			$contact = new ContactModel();
+	
+		function inquire(){
+			$inquire = new InquireModel();
 			
 			//get contact info 
-			$info = $contact->contact(); 
+			$info = $inquire->inquire(); 
 			
-			include '../views/contact.php';
-		}
+			include '../views/inquire.php';
+		}	
+     
 		
 
 	}
