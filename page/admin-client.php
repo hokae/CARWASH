@@ -18,11 +18,11 @@ if (isset($_GET['booking_id'])) {
     // Execute the update query
     if ($connector->executeUpdate($sql, $params)) {
         // Redirect with a success message (approved=true)
-        header("Location: admin-client.php?approved=true");
+        header("Location: ../views/client.php");
         exit();
     } else {
         // Redirect with an error message (approved=false)
-        header("Location: admin-client.php?approved=false");
+        header("Location: ../views/client.php");
         exit();
     }
 }

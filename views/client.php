@@ -8,7 +8,7 @@
     $connector = new Connector();
 
     // Fetch all bookings that are pending approval
-    $sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time FROM booking_tb WHERE booking_status = 'pending'";
+    $sql = "SELECT booking_id, booking_fullname, booking_email, booking_number, booking_date, booking_time, booking_status FROM booking_tb WHERE booking_status IN ('pending', 'approved')";
 
     $bookings = $connector->executeQuery($sql);
 ?>
@@ -125,6 +125,7 @@
                 <th>Phone</th>
                 <th>Date</th>
                 <th>Time</th>
+                <th>Status</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -136,9 +137,10 @@
                     <td><?php echo $booking['booking_number']; ?></td>
                     <td><?php echo $booking['booking_date']; ?></td>
                     <td><?php echo $booking['booking_time']; ?></td>
+                    <td style="color: green;"><?php echo $booking['booking_status']; ?></td>
                     <td>
                         <!-- Link to approve booking, passing the booking_id as a parameter -->
-                        <a href="admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn-approve">Approve</a>
+                        <a href="admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn btn-primary" onclick="return confirm('Are you sure you want to approve this booking?');">Approve</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
