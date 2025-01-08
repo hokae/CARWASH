@@ -21,16 +21,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script>
         // Check the URL for the "approved" query parameter
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const approved = urlParams.get('approved');
             
             // Show the alert if the 'approved' parameter is set to true
             if (approved === 'true') {
                 alert('Booking has been approved!');
+                clearUrlParams();
             } else if (approved === 'false') {
                 alert('There was an error approving the booking.');
+                clearUrlParams();
             }
+        });
+
+        // Function to clear URL parameters
+        function clearUrlParams() {
+            const url = window.location.href.split('?')[0];
+            window.history.replaceState({}, document.title, url);
         }
     </script>
     <style>
@@ -39,7 +47,6 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             margin: 0;
-           
         }
 
         /* Header styling */
@@ -101,16 +108,16 @@
             }
         }
         .btn-approve {
-        background-color: #4CAF50; /* Green */
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-    .btn-approve:hover {
-        background-color: #45a049;
-    }
+        .btn-approve:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -137,16 +144,15 @@
                     <td><?php echo $booking['booking_number']; ?></td>
                     <td><?php echo $booking['booking_date']; ?></td>
                     <td><?php echo $booking['booking_time']; ?></td>
-                    <td style="color: green;"><?php echo $booking['booking_status']; ?></td>
+                    <td style="color: #218838;"><?php echo $booking['booking_status']; ?></td>
                     <td>
                         <!-- Link to approve booking, passing the booking_id as a parameter -->
-                        <a href="admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn btn-primary" onclick="return confirm('Are you sure you want to approve this booking?');">Approve</a>
+                        <a href="../page/admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>&action=approve" class="btn-approve" onclick="return confirm('Are you sure you want to approve this booking?');">Approve</a>
+                        <a href="../page/admin-client.php?booking_id=<?php echo $booking['booking_id']; ?>&action=delete" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this booking?');">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
-    </table>
-        
     </table>
 </div>
 
