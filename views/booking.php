@@ -39,8 +39,6 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Status</th>
-                    <th>Action</th>
-                    
                 </tr>
             </thead>
             <tbody>
@@ -52,7 +50,6 @@
                     <td><?php echo $booking['booking_date']; ?></td>
                     <td><?php echo $booking['booking_time']; ?></td>
                     <td style="color: green;"><?php echo $booking['booking_status']; ?></td>
-                    <td><a href="delete_booking.php?booking_id=<?php echo $booking['booking_id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this booking?');">Delete</a></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
